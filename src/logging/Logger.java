@@ -24,7 +24,7 @@ public class Logger {
         instance = this;
     }
 
-    public Logger getInstance() {
+    public static Logger getInstance() {
         if (instance == null) {
             instance = new Logger();
         }

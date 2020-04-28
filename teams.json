@@ -1,0 +1,410 @@
+[
+  {
+    "Team Name": "Kansas",
+    "Elo": 2018,
+    "Region": "Midwest",
+    "Seed": 1
+  },
+  {
+    "Team Name": "Siena",
+    "Elo": 1615,
+    "Region": "Midwest",
+    "Seed": 16
+  },
+  {
+    "Team Name": "Houston",
+    "Elo": 1765,
+    "Region": "Midwest",
+    "Seed": 8
+  },
+  {
+    "Team Name": "Marquette",
+    "Elo": 1626,
+    "Region": "Midwest",
+    "Seed": 9
+  },
+  {
+    "Team Name": "Auburn",
+    "Elo": 1841,
+    "Region": "Midwest",
+    "Seed": 5
+  },
+  {
+    "Team Name": "Liberty",
+    "Elo": 1659,
+    "Region": "Midwest",
+    "Seed": 12
+  },
+  {
+    "Team Name": "Wisconsin",
+    "Elo": 1799,
+    "Region": "Midwest",
+    "Seed": 4
+  },
+  {
+    "Team Name": "North Texas",
+    "Elo": 1581,
+    "Region": "Midwest",
+    "Seed": 13
+  },
+  {
+    "Team Name": "Iowa",
+    "Elo": 1761,
+    "Region": "Midwest",
+    "Seed": 6
+  },
+  {
+    "Team Name": "East Tennessee State",
+    "Elo": 1757,
+    "Region": "Midwest",
+    "Seed": 11
+  },
+  {
+    "Team Name": "Duke",
+    "Elo": 1875,
+    "Region": "Midwest",
+    "Seed": 3
+  },
+  {
+    "Team Name": "Belmont",
+    "Elo": 1655,
+    "Region": "Midwest",
+    "Seed": 14
+  },
+  {
+    "Team Name": "Providence",
+    "Elo": 1773,
+    "Region": "Midwest",
+    "Seed": 7
+  },
+  {
+    "Team Name": "Arizona State",
+    "Elo": 1678,
+    "Region": "Midwest",
+    "Seed": 10
+  },
+  {
+    "Team Name": "Kentucky",
+    "Elo": 1923,
+    "Region": "Midwest",
+    "Seed": 2
+  },
+  {
+    "Team Name": "North Dakota State",
+    "Elo": 1593,
+    "Region": "Midwest",
+    "Seed": 15
+  },
+  {
+    "Team Name": "Dayton",
+    "Elo": 2022,
+    "Region": "East",
+    "Seed": 1
+  },
+  {
+    "Team Name": "Robert Morris",
+    "Elo": 1517,
+    "Region": "East",
+    "Seed": 16
+  },
+  {
+    "Team Name": "Boston",
+    "Elo": 1530,
+    "Region": "East",
+    "Seed": 16
+  },
+  {
+    "Team Name": "Colorado",
+    "Elo": 1634,
+    "Region": "East",
+    "Seed": 8
+  },
+  {
+    "Team Name": "Florida",
+    "Elo": 1725,
+    "Region": "East",
+    "Seed": 9
+  },
+  {
+    "Team Name": "Butler",
+    "Elo": 1756,
+    "Region": "East",
+    "Seed": 5
+  },
+  {
+    "Team Name": "Richmond",
+    "Elo": 1701,
+    "Region": "East",
+    "Seed": 12
+  },
+  {
+    "Team Name": "Texas",
+    "Elo": 1651,
+    "Region": "East",
+    "Seed": 12
+  },
+  {
+    "Team Name": "Maryland",
+    "Elo": 1889,
+    "Region": "East",
+    "Seed": 4
+  },
+  {
+    "Team Name": "Akron",
+    "Elo": 1688,
+    "Region": "East",
+    "Seed": 13
+  },
+  {
+    "Team Name": "Penn State",
+    "Elo": 1715,
+    "Region": "East",
+    "Seed": 6
+  },
+  {
+    "Team Name": "NC State",
+    "Elo": 1647,
+    "Region": "East",
+    "Seed": 11
+  },
+  {
+    "Team Name": "UCLA",
+    "Elo": 1703,
+    "Region": "East",
+    "Seed": 11
+  },
+  {
+    "Team Name": "Villanova",
+    "Elo": 1850,
+    "Region": "East",
+    "Seed": 3
+  },
+  {
+    "Team Name": "Hofstra",
+    "Elo": 1634,
+    "Region": "East",
+    "Seed": 14
+  },
+  {
+    "Team Name": "West Virginia",
+    "Elo": 1669,
+    "Region": "East",
+    "Seed": 7
+  },
+  {
+    "Team Name": "Utah State",
+    "Elo": 1740,
+    "Region": "East",
+    "Seed": 10
+  },
+  {
+    "Team Name": "Florida State",
+    "Elo": 1907,
+    "Region": "East",
+    "Seed": 2
+  },
+  {
+    "Team Name": "Northern Kentucky",
+    "Elo": 1561,
+    "Region": "East",
+    "Seed": 15
+  },
+  {
+    "Team Name": "Gonzaga",
+    "Elo": 1940,
+    "Region": "West",
+    "Seed": 1
+  },
+  {
+    "Team Name": "Prarie View",
+    "Elo": 1439,
+    "Region": "West",
+    "Seed": 16
+  },
+  {
+    "Team Name": "NC Central",
+    "Elo": 1456,
+    "Region": "West",
+    "Seed": 16
+  },
+  {
+    "Team Name": "Lousiana State",
+    "Elo": 1695,
+    "Region": "West",
+    "Seed": 8
+  },
+  {
+    "Team Name": "Oklahoma",
+    "Elo": 1679,
+    "Region": "West",
+    "Seed": 9
+  },
+  {
+    "Team Name": "Michigan",
+    "Elo": 1721,
+    "Region": "West",
+    "Seed": 5
+  },
+  {
+    "Team Name": "Yale",
+    "Elo": 1610,
+    "Region": "West",
+    "Seed": 12
+  },
+  {
+    "Team Name": "Oregon",
+    "Elo": 1886,
+    "Region": "West",
+    "Seed": 4
+  },
+  {
+    "Team Name": "New Mexico State",
+    "Elo": 1695,
+    "Region": "West",
+    "Seed": 13
+  },
+  {
+    "Team Name": "Brigham Young",
+    "Elo": 1747,
+    "Region": "West",
+    "Seed": 6
+  },
+  {
+    "Team Name": "Indiana",
+    "Elo": 1687,
+    "Region": "West",
+    "Seed": 11
+  },
+  {
+    "Team Name": "Seton Hall",
+    "Elo": 1780,
+    "Region": "West",
+    "Seed": 3
+  },
+  {
+    "Team Name": "Eastern Washington",
+    "Elo": 1607,
+    "Region": "West",
+    "Seed": 14
+  },
+  {
+    "Team Name": "Arizona",
+    "Elo": 1801,
+    "Region": "West",
+    "Seed": 7
+  },
+  {
+    "Team Name": "Texas Tech",
+    "Elo": 1684,
+    "Region": "West",
+    "Seed": 10
+  },
+  {
+    "Team Name": "San Diega State",
+    "Elo": 1795,
+    "Region": "West",
+    "Seed": 2
+  },
+  {
+    "Team Name": "UC Irvine",
+    "Elo": 1585,
+    "Region": "West",
+    "Seed": 15
+  },
+  {
+    "Team Name": "Baylor",
+    "Elo": 1876,
+    "Region": "South",
+    "Seed": 1
+  },
+  {
+    "Team Name": "Winthrop",
+    "Elo": 1535,
+    "Region": "South",
+    "Seed": 16
+  },
+  {
+    "Team Name": "Saint Mary's",
+    "Elo": 1773,
+    "Region": "South",
+    "Seed": 8
+  },
+  {
+    "Team Name": "Rutgers",
+    "Elo": 1622,
+    "Region": "South",
+    "Seed": 9
+  },
+  {
+    "Team Name": "Ohio State",
+    "Elo": 1800,
+    "Region": "South",
+    "Seed": 5
+  },
+  {
+    "Team Name": "Stephen F Austin",
+    "Elo": 1656,
+    "Region": "South",
+    "Seed": 12
+  },
+  {
+    "Team Name": "Louisville",
+    "Elo": 1820,
+    "Region": "South",
+    "Seed": 4
+  },
+  {
+    "Team Name": "Vermont",
+    "Elo": 1659,
+    "Region": "South",
+    "Seed": 13
+  },
+  {
+    "Team Name": "Virginia",
+    "Elo": 1827,
+    "Region": "South",
+    "Seed": 6
+  },
+  {
+    "Team Name": "Cincinnati",
+    "Elo": 1714,
+    "Region": "South",
+    "Seed": 11
+  },
+  {
+    "Team Name": "Michigan State",
+    "Elo": 1823,
+    "Region": "South",
+    "Seed": 3
+  },
+  {
+    "Team Name": "Bradley",
+    "Elo": 1598,
+    "Region": "South",
+    "Seed": 14
+  },
+  {
+    "Team Name": "Illinois",
+    "Elo": 1746,
+    "Region": "South",
+    "Seed": 7
+  },
+  {
+    "Team Name": "Souther California",
+    "Elo": 1688,
+    "Region": "South",
+    "Seed": 10
+  },
+  {
+    "Team Name": "Creighton",
+    "Elo": 1970,
+    "Region": "South",
+    "Seed": 2
+  },
+  {
+    "Team Name": "Arkansas Little Rock",
+    "Elo": 1488,
+    "Region": "South",
+    "Seed": 15
+  }
+]

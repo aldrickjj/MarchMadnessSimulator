@@ -10,17 +10,27 @@ import java.io.FileReader;
 import java.util.List;
 import java.util.Vector;
 
+/**
+ * Class that reads Team data from a JSON
+ */
 public class TeamReaderJSON implements TeamReader{
     private String filename;
     private String fileText;
     private List<Team> teamList;
     private Logger logger;
 
+    /**
+     * Constructor for the JSON Reader
+     * @param filename name of the input file
+     */
     public TeamReaderJSON(String filename) {
         this.filename = filename;
         logger = Logger.getInstance();
     }
 
+    /**
+     * Reads from the provided file
+     */
     private void readFile() {
         teamList = new Vector<>();
         fileText = readFileIntoString(filename);
@@ -53,6 +63,11 @@ public class TeamReaderJSON implements TeamReader{
         }
     }
 
+    /**
+     * Converts a JSON Object into a Team object
+     * @param ob the JSON Object
+     * @return the Team object created from the data in the JSON Object
+     */
     private Team JSONToTeam(JSONObject ob) {
         String name = ob.getString("Team Name");
         int elo = ob.getInt("Elo");
@@ -61,6 +76,10 @@ public class TeamReaderJSON implements TeamReader{
         return new Team(name, elo, region, seed);
     }
 
+    /**
+     * Getter for the list of teams
+     * @return the list of teams
+     */
     @Override
     public List<Team> getTeamList() {
         if(teamList == null) {

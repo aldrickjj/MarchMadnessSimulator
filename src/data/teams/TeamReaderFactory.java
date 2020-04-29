@@ -4,9 +4,17 @@ import data.brackets.BracketReaderCSV;
 import data.brackets.BracketReaderJSON;
 import logging.Logger;
 
+/**
+ * Creates readers for the Team data based on file type
+ */
 public class TeamReaderFactory {
     private Logger logger = Logger.getInstance();
 
+    /**
+     * Creates the correct type of TeamReader
+     * @param filename name of the input file
+     * @return the corresponding TeamReader based on the file type
+     */
     public TeamReader getTeamReader(String filename) {
         if(filename.toLowerCase().contains("csv")) {
             logger.info(this.getClass().getName(), "creating TeamReader for csv type file");

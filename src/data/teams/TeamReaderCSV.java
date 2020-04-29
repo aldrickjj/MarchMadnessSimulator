@@ -9,16 +9,26 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Class that reads in Team data from a CSV file
+ */
 public class TeamReaderCSV implements TeamReader{
     private List<Team> teamList;
     private String filename;
     private Logger logger;
 
+    /**
+     * Constructor for the CSV reader
+     * @param filename the name of the file to read from
+     */
     public TeamReaderCSV(String filename) {
         this.filename = filename;
         logger = Logger.getInstance();
     }
 
+    /**
+     * Read the given file
+     */
     private void readFile(){
         try {
             BufferedReader br = new BufferedReader(new FileReader(filename));
@@ -33,6 +43,11 @@ public class TeamReaderCSV implements TeamReader{
         }
     }
 
+    /**
+     * Convert a given String into a Team object
+     * @param line the String with the Team information
+     * @return the Team object
+     */
     private Team lineToTeam(String line) {
         String[] elements = line.split(",");
         String name = elements[0].trim();
@@ -42,6 +57,10 @@ public class TeamReaderCSV implements TeamReader{
         return new Team(name, elo, region, seed);
     }
 
+    /**
+     * Getter for the list of teams
+     * @return the list of teams
+     */
     @Override
     public List<Team> getTeamList() {
         if(teamList == null) {

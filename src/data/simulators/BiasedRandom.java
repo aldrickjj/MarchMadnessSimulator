@@ -1,6 +1,5 @@
 package data.simulators;
 
-import records.Match;
 import records.Team;
 import java.util.Random;
 

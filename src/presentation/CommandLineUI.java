@@ -99,7 +99,7 @@ public class CommandLineUI {
      */
     private void processSelection(int selection) {
         logger.info(this.getClass().getName(), "processing user's selection.");
-        String teamname = "";
+        String teamname;
         switch (selection) {
             case 1:
                 simulator = new FavoriteAlwaysWins(teamList);

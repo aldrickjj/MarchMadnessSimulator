@@ -1,7 +1,13 @@
 import presentation.CommandLineUI;
 
+/**
+ * Class begins the program
+ */
 public class start {
-
+    /**
+     * Method that begins the program by creating and calling the start method in a CommandLineUI
+     * @param args
+     */
     public static void main(String[] args){
         if(args.length < 2) {
             System.out.println("You must provide exactly two command line arguments.");

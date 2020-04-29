@@ -1,0 +1,75 @@
+Wed Apr 29 01:14:15 EDT 2020 INFO data.teams.TeamReaderFactory:0 - creating TeamReader for json type file
+Wed Apr 29 01:14:15 EDT 2020 INFO data.brackets.BracketReaderFactory:0 - creating BracketReader for json type file
+Wed Apr 29 01:14:15 EDT 2020 INFO data.teams.TeamReaderJSON:0 - Content successfully read from the JSON file.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.teams.TeamReaderJSON:0 - content converts to list of teams.
+Wed Apr 29 01:14:15 EDT 2020 INFO controller.SimulatorController:0 - simulator created using the FavoriteAlwaysWins strategy
+Wed Apr 29 01:14:15 EDT 2020 INFO data.brackets.BracketReaderJSON:0 - Content successfully read from the JSON file.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.brackets.BracketReaderJSON:0 - content converts to list of matches.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO data.simulators.FavoriteAlwaysWins:0 - getWinner() called.
+Wed Apr 29 01:14:15 EDT 2020 INFO controller.SimulatorController:0 - complete running the simulator. Winner should be available

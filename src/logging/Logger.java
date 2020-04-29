@@ -37,6 +37,8 @@ public class Logger {
                 .append(":").append(line_number).append(" - ").append(message);
         try {
             writer.write(sb.toString());
+            writer.newLine();
+            writer.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -48,6 +50,8 @@ public class Logger {
                 .append(":").append(line_number).append(" - ").append(message);
         try {
             writer.write(sb.toString());
+            writer.newLine();
+            writer.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -59,6 +63,8 @@ public class Logger {
                 .append(":").append(line_number).append(" - ").append(message);
         try {
             writer.write(sb.toString());
+            writer.newLine();
+            writer.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }

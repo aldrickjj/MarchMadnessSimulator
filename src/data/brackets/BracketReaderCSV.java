@@ -24,7 +24,7 @@ public class BracketReaderCSV implements BracketReader {
         try {
             BufferedReader br = new BufferedReader(new FileReader(filename));
             matches = br.lines()
-                    .filter(line -> Character.isDigit(line.charAt(0)))
+                    .filter(line -> !line.equals("Game No.,Team 1,Team 2,Winner goes to game no."))
                     .map(line -> lineToMath(line))
                     .collect(Collectors.toList());
             logger.info(this.getClass().getName(), "bracket file content successfully read.");

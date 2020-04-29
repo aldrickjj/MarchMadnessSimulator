@@ -28,4 +28,9 @@ public class Team {
     public int getSeed() {
         return seed;
     }
+
+    public boolean equals(Object o) {
+        Team other = (Team) o;
+        return this.name.equals(other.name) && this.region.equals(other.region) && this.elo==other.elo && this.seed==other.seed;
+    }
 }

@@ -28,4 +28,9 @@ public class Match {
     public int getGoesTo() {
         return goesTo;
     }
+
+    public boolean equals(Object o) {
+        Match other = (Match) o;
+        return this.gameNum==other.gameNum && this.team1.equals(other.team1) && this.team2.equals(other.team2) && this.goesTo==other.goesTo;
+    }
 }

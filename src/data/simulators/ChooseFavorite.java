@@ -1,5 +1,6 @@
 package data.simulators;
 
+import logging.Logger;
 import records.Match;
 import records.Team;
 
@@ -11,8 +12,10 @@ import java.util.Random;
 public class ChooseFavorite implements Simulator{
     private Team biased_team;
     private Map<String, Team> teamMap;
+    private Logger logger;
 
     public ChooseFavorite(List<Team> teamList, String biased_team_name) {
+        logger = Logger.getInstance();
         teamMap = new HashMap<>();
         listToMap(teamList);
         this.biased_team = teamMap.get(biased_team_name);
@@ -20,6 +23,7 @@ public class ChooseFavorite implements Simulator{
 
     @Override
     public Team getWinner(Match match) {
+        logger.info(this.getClass().getName(), "getWinner() called.");
         Team team1 = teamMap.get(match.getTeam1());
         Team team2 = teamMap.get(match.getTeam2());
         if(team1.equals(biased_team) || team2.equals(biased_team)) {

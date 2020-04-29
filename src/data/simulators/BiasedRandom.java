@@ -1,5 +1,6 @@
 package data.simulators;
 
+import logging.Logger;
 import records.Match;
 import records.Team;
 
@@ -11,14 +12,17 @@ import java.util.Random;
 public class BiasedRandom implements Simulator{
 
     private Map<String, Team> teamMap;
+    private Logger logger;
 
     public BiasedRandom(List<Team> teamList) {
+        logger = Logger.getInstance();
         teamMap = new HashMap<>();
         listToMap(teamList);
     }
     
     @Override
     public Team getWinner(Match match) {
+        logger.info(this.getClass().getName(), "getWinner() called.");
         Team team1 = teamMap.get(match.getTeam1());
         Team team2 = teamMap.get(match.getTeam2());
         Team favorite = team1;

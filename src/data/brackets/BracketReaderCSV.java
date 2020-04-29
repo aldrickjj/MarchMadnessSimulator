@@ -43,7 +43,13 @@ public class BracketReaderCSV implements BracketReader {
         int gameNum = Integer.parseInt(elements[0].trim());
         String team1 = elements[1].trim();
         String team2 = elements[2].trim();
-        int goesTo = Integer.parseInt(elements[3].trim());
+        int goesTo;
+        if(elements[3].trim().equals("")){
+            goesTo = 0;
+        }
+        else {
+            goesTo = Integer.parseInt(elements[3].trim());
+        }
         return new Match(gameNum, team1, team2, goesTo);
     }
 

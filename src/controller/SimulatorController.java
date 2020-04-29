@@ -1,19 +1,13 @@
 package controller;
 
-import data.brackets.BracketReader;
-import data.brackets.BracketReaderFactory;
-import data.simulators.BiasedRandom;
-import data.simulators.ChooseFavorite;
-import data.simulators.FavoriteAlwaysWins;
-import data.simulators.Simulator;
-import data.teams.TeamReader;
-import data.teams.TeamReaderFactory;
+import data.brackets.*;
+import data.simulators.*;
+import data.teams.*;
 import logging.Logger;
-import records.Bracket;
-import records.Match;
-import records.Team;
+import records.*;
 
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class SimulatorController {
     private Logger logger;
@@ -60,6 +54,39 @@ public class SimulatorController {
     }
 
     public void runSimulator() {
+        HashMap<Integer, Match> matchMap = listToBracket();
+        List<Match> matches = bracketReader.getMatchList().stream()
+                .sorted(Comparator.comparingInt(Match::getGameNum))
+                .collect(Collectors.toList());
+        for(Match match : matches) {
+            Team winningTeam = simulator.getWinner(match);
+            int goesTo = match.getGoesTo();
+            if(goesTo == 0) {
+                this.winner = winningTeam;
+                break;
+            }
+            Match nextMatch = matchMap.get(goesTo);
+            if(nextMatch.getTeam1().equals("")) {
+                nextMatch.setTeam2(winningTeam.getName());
+            }
+            else {
+                nextMatch.setTeam1(winningTeam.getName());
+            }
+        }
+        logger.info(this.getClass().getName(), "complete running the simulator. Winner should be available");
+    }
+
+    public Team getWinner() {
+        logger.info(this.getClass().getName(), "getWinner() called.");
+        return this.winner;
+    }
+
+    private HashMap<Integer, Match> listToBracket() {
+        bracket = new Bracket();
         List<Match> matches = bracketReader.getMatchList();
+        for(Match match : matches) {
+            bracket.addMatch(match);
+        }
+        return bracket.getBracket();
     }
 }

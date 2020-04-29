@@ -35,7 +35,13 @@ public class BracketReaderJSON implements BracketReader {
         int gameNum = ob.getInt("Game No.");
         String team1 = ob.getString("Team 1");
         String team2 = ob.getString("Team 2");
-        int goesTo = ob.getInt("Winner goes to game no.");
+        int goesTo;
+        try {
+            goesTo = ob.getInt("Winner goes to game no.");
+        }
+        catch (Exception e) {
+            goesTo = 0;
+        }
         return new Match(gameNum, team1, team2, goesTo);
     }
 

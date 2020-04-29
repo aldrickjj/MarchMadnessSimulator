@@ -9,16 +9,26 @@ import java.util.stream.Collectors;
 
 import logging.Logger;
 
+/**
+ * Class that reads in bracket data from a csv file
+ */
 public class BracketReaderCSV implements BracketReader {
     private List<Match> matches;
     private String filename;
     private Logger logger;
 
+    /**
+     * Constructor for the CSV reader
+     * @param filename The name of the file that will be read from
+     */
     public BracketReaderCSV(String filename) {
         this.filename = filename;
         logger = Logger.getInstance();
     }
 
+    /**
+     * Reads from the file
+     */
     private void readFile() {
         try {
             BufferedReader br = new BufferedReader(new FileReader(filename));
@@ -49,6 +59,10 @@ public class BracketReaderCSV implements BracketReader {
         return new Match(gameNum, team1, team2, goesTo);
     }
 
+    /**
+     * Getter for the list of Matches
+     * @return the list of Matches
+     */
     @Override
     public List<Match> getMatchList() {
         if(matches == null) {

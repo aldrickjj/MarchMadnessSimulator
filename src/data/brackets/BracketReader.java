@@ -3,6 +3,9 @@ package data.brackets;
 import records.Match;
 import java.util.List;
 
+/**
+ * Interface for classes that read in bracket data
+ */
 public interface BracketReader {
-    public List<Match> getMatchList();
+    List<Match> getMatchList();
 }

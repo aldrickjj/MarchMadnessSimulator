@@ -9,6 +9,9 @@ import records.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Class that acts as the controller of the simulator program
+ */
 public class SimulatorController {
     private Logger logger;
     private Bracket bracket;
@@ -16,6 +19,11 @@ public class SimulatorController {
     private BracketReader bracketReader;
     private Map<Integer, Team> winnerMap;
 
+    /**
+     * Constructor for the Controller
+     * @param team_filename the file name for the team data
+     * @param bracket_filename the file  name for the bracket data
+     */
     public SimulatorController(String team_filename, String bracket_filename) {
         logger = Logger.getInstance();
         logger.info(this.getClass().getName(), "creating a new instance of SimulatorController.");
@@ -26,6 +34,11 @@ public class SimulatorController {
         winnerMap = new HashMap<>();
     }
 
+    /**
+     * Check if there is a team with the provided name
+     * @param teamname the name of the team
+     * @return true if the team exists, otherwise returns false
+     */
     public boolean checkTeam(String teamname) {
         logger.info(this.getClass().getName(), "check if " + teamname + " is valid.");
         for(Team team : teamReader.getTeamList()) {
@@ -38,6 +51,10 @@ public class SimulatorController {
         return false;
     }
 
+    /**
+     * Starts running the simulator
+     * @param simulator A simulator object based on which method of deciding the winner is used
+     */
     public void runSimulator(Simulator simulator) {
         logger.info(this.getClass().getName(), "start running the simulator.");
         HashMap<Integer, Match> matchMap = listToBracket();
@@ -63,6 +80,10 @@ public class SimulatorController {
         logger.info(this.getClass().getName(), "complete running the simulator. Winner should be available");
     }
 
+    /**
+     * Produces the String that will be output
+     * @return the String that will be output
+     */
     public String getOutComeString() {
         logger.info(this.getClass().getName(), "producing the outcome of the simulation into a String");
         StringBuilder sb = new StringBuilder();
@@ -74,6 +95,10 @@ public class SimulatorController {
         return sb.toString();
     }
 
+    /**
+     * Adds a list of matches to the bracket
+     * @return the HashMap that represents the bracket
+     */
     private HashMap<Integer, Match> listToBracket() {
         logger.info(this.getClass().getName(), "add a list of matches to the bracket");
         bracket = new Bracket();
@@ -85,6 +110,10 @@ public class SimulatorController {
         return bracket.getBracket();
     }
 
+    /**
+     * get the list of teams
+     * @return the list of teams
+     */
     public List<Team> getTeamList() {
         return teamReader.getTeamList();
     }

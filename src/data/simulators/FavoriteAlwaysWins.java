@@ -9,17 +9,29 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+/**
+ * Implements a simulator where the favorite in each Match always wins
+ */
 public class FavoriteAlwaysWins implements Simulator {
 
     private Map<String, Team> teamMap;
     private Logger logger;
 
+    /**
+     * Constructor for the simulator
+     * @param teamList the list of teams
+     */
     public FavoriteAlwaysWins(List<Team> teamList) {
         logger = Logger.getInstance();
         teamMap = new HashMap<>();
         listToMap(teamList);
     }
 
+    /**
+     * Returns the winner of a Match by comparing the ELOs of the participating teams
+     * @param match the Match in which the winner will be decided
+     * @return the Team with the higher ELO
+     */
     @Override
     public Team getWinner(Match match) {
         logger.info(this.getClass().getName(), "getWinner() called.");
@@ -43,6 +55,10 @@ public class FavoriteAlwaysWins implements Simulator {
         }
     }
 
+    /**
+     * Converts the list of teams to a Hashmap
+     * @param teamList the list of teams
+     */
     private void listToMap(List<Team> teamList) {
         for(Team team : teamList) {
             String name = team.getName();

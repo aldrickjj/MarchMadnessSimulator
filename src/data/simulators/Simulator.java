@@ -3,6 +3,9 @@ package data.simulators;
 import records.Match;
 import records.Team;
 
+/**
+ * Interface for the Simulators
+ */
 public interface Simulator {
-    public Team getWinner(Match match);
+    Team getWinner(Match match);
 }

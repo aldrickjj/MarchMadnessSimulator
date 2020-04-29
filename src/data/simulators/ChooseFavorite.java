@@ -9,11 +9,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+/**
+ * Class that chooses the winner based on a provided team
+ */
 public class ChooseFavorite implements Simulator{
     private Team biased_team;
     private Map<String, Team> teamMap;
     private Logger logger;
 
+    /**
+     * Constructor for the class
+     * @param teamList the list of teams
+     * @param biased_team_name the name of the selected team
+     */
     public ChooseFavorite(List<Team> teamList, String biased_team_name) {
         logger = Logger.getInstance();
         teamMap = new HashMap<>();
@@ -21,6 +29,11 @@ public class ChooseFavorite implements Simulator{
         this.biased_team = teamMap.get(biased_team_name);
     }
 
+    /**
+     * Gets the winner of a Matchup by choosing the favorite
+     * @param match the Match where the winner will be decided
+     * @return the selected team if they are in the match, otherwise uses BiasedRandom to choose winner
+     */
     @Override
     public Team getWinner(Match match) {
         logger.info(this.getClass().getName(), "getWinner() called.");
@@ -51,6 +64,10 @@ public class ChooseFavorite implements Simulator{
         }
     }
 
+    /**
+     * Converts the list of teams into a Hashmamp
+     * @param teamList the list of teams
+     */
     private void listToMap(List<Team> teamList) {
         for(Team team : teamList) {
             String name = team.getName();

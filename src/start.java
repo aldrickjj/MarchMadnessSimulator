@@ -1,3 +1,5 @@
+import presentation.CommandLineUI;
+
 public class start {
 
     public static void main(String[] args){
@@ -7,5 +9,7 @@ public class start {
         }
         String team_file_name = args[0];
         String bracket_file_name = args[1];
+        CommandLineUI clu = new CommandLineUI(team_file_name, bracket_file_name);
+        clu.start();
     }
 }

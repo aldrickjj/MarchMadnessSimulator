@@ -17,12 +17,24 @@ public class SimulatorController {
     private BracketReader bracketReader;
     private Team winner;
 
-    public SimulatorController(String strategy, String team_filename, String bracket_filename) {
+    public SimulatorController(String team_filename, String bracket_filename) {
         logger = Logger.getInstance();
         TeamReaderFactory trf = new TeamReaderFactory();
         BracketReaderFactory brf = new BracketReaderFactory();
         teamReader = trf.getTeamReader(team_filename);
         bracketReader = brf.getBracketReader(bracket_filename);
+    }
+
+    public boolean checkTeam(String teamname) {
+        for(Team team : teamReader.getTeamList()) {
+            if(team.getName().equals(teamname)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void setStrategy(String strategy) {
         if(strategy.equals("FavoriteAlwaysWins")) {
             simulator = new FavoriteAlwaysWins(teamReader.getTeamList());
             logger.info(this.getClass().getName(), "simulator created using the FavoriteAlwaysWins strategy");
@@ -37,12 +49,7 @@ public class SimulatorController {
         }
     }
 
-    public SimulatorController(String strategy, String biased_team, String team_filename, String bracket_filename) {
-        logger = Logger.getInstance();
-        TeamReaderFactory trf = new TeamReaderFactory();
-        BracketReaderFactory brf = new BracketReaderFactory();
-        teamReader = trf.getTeamReader(team_filename);
-        bracketReader = brf.getBracketReader(bracket_filename);
+    public void setStrategy(String strategy, String biased_team) {
         if(strategy.equals("PickAFavorite")) {
             simulator = new ChooseFavorite(teamReader.getTeamList(), biased_team);
             logger.info(this.getClass().getName(), "simulator created using the PickAFavorite strategy");

@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.List;
 import records.Match;
 import java.io.BufferedReader;
-import java.util.Vector;
 import java.util.stream.Collectors;
 
 import logging.Logger;
@@ -23,8 +22,8 @@ public class BracketReaderCSV implements BracketReader {
     private void readFile() {
         try {
             BufferedReader br = new BufferedReader(new FileReader(filename));
+            br.readLine();
             matches = br.lines()
-                    .filter(line -> !line.equals("Game No.,Team 1,Team 2,Winner goes to game no."))
                     .map(line -> lineToMath(line))
                     .collect(Collectors.toList());
             logger.info(this.getClass().getName(), "bracket file content successfully read.");
@@ -41,15 +40,12 @@ public class BracketReaderCSV implements BracketReader {
     private Match lineToMath(String line) {
         String[] elements = line.split(",");
         int gameNum = Integer.parseInt(elements[0].trim());
+        if(elements.length == 1) {
+            return new Match(gameNum, "", "", 0);
+        }
         String team1 = elements[1].trim();
         String team2 = elements[2].trim();
-        int goesTo;
-        if(elements[3].trim().equals("")){
-            goesTo = 0;
-        }
-        else {
-            goesTo = Integer.parseInt(elements[3].trim());
-        }
+        int goesTo = Integer.parseInt(elements[3].trim());
         return new Match(gameNum, team1, team2, goesTo);
     }
 

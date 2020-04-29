@@ -15,7 +15,7 @@ public class SimulatorController {
     private Simulator simulator;
     private TeamReader teamReader;
     private BracketReader bracketReader;
-    private Team winner;
+    private Map<Integer, Team> winnerMap;
 
     public SimulatorController(String team_filename, String bracket_filename) {
         logger = Logger.getInstance();
@@ -23,6 +23,7 @@ public class SimulatorController {
         BracketReaderFactory brf = new BracketReaderFactory();
         teamReader = trf.getTeamReader(team_filename);
         bracketReader = brf.getBracketReader(bracket_filename);
+        winnerMap = new HashMap<>();
     }
 
     public boolean checkTeam(String teamname) {
@@ -34,7 +35,7 @@ public class SimulatorController {
         return false;
     }
 
-    public void setStrategy(String strategy) {
+    public void setStrategy(String strategy, String biased_team) {
         if(strategy.equals("FavoriteAlwaysWins")) {
             simulator = new FavoriteAlwaysWins(teamReader.getTeamList());
             logger.info(this.getClass().getName(), "simulator created using the FavoriteAlwaysWins strategy");
@@ -43,14 +44,7 @@ public class SimulatorController {
             simulator = new BiasedRandom(teamReader.getTeamList());
             logger.info(this.getClass().getName(), "simulator created using the BiasedRandomness strategy");
         }
-        else {
-            simulator = null;
-            logger.info(this.getClass().getName(), "simulator cannot be created");
-        }
-    }
-
-    public void setStrategy(String strategy, String biased_team) {
-        if(strategy.equals("PickAFavorite")) {
+        else if(strategy.equals("PickAFavorite")) {
             simulator = new ChooseFavorite(teamReader.getTeamList(), biased_team);
             logger.info(this.getClass().getName(), "simulator created using the PickAFavorite strategy");
         }
@@ -67,25 +61,29 @@ public class SimulatorController {
                 .collect(Collectors.toList());
         for(Match match : matches) {
             Team winningTeam = simulator.getWinner(match);
+            winnerMap.put(match.getGameNum(), winningTeam);
             int goesTo = match.getGoesTo();
             if(goesTo == 0) {
-                this.winner = winningTeam;
                 break;
             }
-            Match nextMatch = matchMap.get(goesTo);
-            if(nextMatch.getTeam1().equals("")) {
-                nextMatch.setTeam2(winningTeam.getName());
+            if(matchMap.get(goesTo).getTeam2().equals("")) {
+                matchMap.get(goesTo).setTeam2(winningTeam.getName());
             }
             else {
-                nextMatch.setTeam1(winningTeam.getName());
+                matchMap.get(goesTo).setTeam1(winningTeam.getName());
             }
         }
         logger.info(this.getClass().getName(), "complete running the simulator. Winner should be available");
     }
 
-    public Team getWinner() {
-        logger.info(this.getClass().getName(), "getWinner() called.");
-        return this.winner;
+    public String getOutComeString() {
+        StringBuilder sb = new StringBuilder();
+        for(int i = 1; i < winnerMap.size(); i += 1) {
+            sb.append("Match ").append(i).append(" winner: ").append(winnerMap.get(i).getName()).append(". Advance to match ")
+                    .append(bracket.getMatch(i).getGoesTo()).append("\n");
+        }
+        sb.append("Match ").append(67).append(" winner: ").append(winnerMap.get(67).getName()).append(".");
+        return sb.toString();
     }
 
     private HashMap<Integer, Match> listToBracket() {

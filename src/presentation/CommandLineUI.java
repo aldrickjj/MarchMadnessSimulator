@@ -1,6 +1,7 @@
 package presentation;
 
 import controller.SimulatorController;
+import records.Bracket;
 
 import java.util.*;
 
@@ -17,7 +18,7 @@ public class CommandLineUI {
     public void start() {
         menu();
         sc.runSimulator();
-        System.out.println("The winner is " + sc.getWinner().getName());
+        System.out.println(sc.getOutComeString());
     }
 
     private void menu() {
@@ -55,15 +56,16 @@ public class CommandLineUI {
     }
 
     private void processSelection(int selection) {
+        String teamname = "";
         switch (selection) {
             case 1:
-                sc.setStrategy("FavoriteAlwaysWins");
+                sc.setStrategy("FavoriteAlwaysWins", teamname);
                 break;
             case 2:
-                sc.setStrategy("BiasedRandomness");
+                sc.setStrategy("BiasedRandomness", teamname);
                 break;
             case 3:
-                String teamname = getBiasedTeamName();
+                teamname = getBiasedTeamName();
                 sc.setStrategy("PickAFavorite", teamname);
                 break;
         }
@@ -73,8 +75,12 @@ public class CommandLineUI {
         boolean validTeamName;
         String teamname;
         do{
+            System.out.println("Please choose a valid team: ");
             teamname = in.nextLine().trim();
             validTeamName = sc.checkTeam(teamname);
+            if(!validTeamName) {
+                System.out.println("Invalid choice. Please try again. Remember to check for capitalization.");
+            }
         }
         while(!validTeamName);
         return teamname;

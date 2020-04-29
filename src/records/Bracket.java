@@ -13,6 +13,10 @@ public class Bracket {
         matches.put(m.getGameNum(), m);
     }
 
+    public Match getMatch(int gameNum) {
+        return matches.get(gameNum);
+    }
+
     public HashMap<Integer, Match> getBracket(){
         return matches;
     }

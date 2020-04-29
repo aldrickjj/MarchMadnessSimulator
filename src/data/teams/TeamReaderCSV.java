@@ -22,8 +22,8 @@ public class TeamReaderCSV implements TeamReader{
     private void readFile(){
         try {
             BufferedReader br = new BufferedReader(new FileReader(filename));
+            br.readLine();
             teamList = br.lines()
-                    .filter(line -> !line.equals("Team Name,Elo,Region,Seed"))
                     .map(line -> lineToTeam(line))
                     .collect(Collectors.toList());
             logger.info(this.getClass().getName(), "contents in the team file successfully read and converted to team objects");

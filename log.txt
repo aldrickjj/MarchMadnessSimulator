@@ -1,228 +1,219 @@
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:1 - creating a new instance of CommandLineUI.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:2 - creating a new instance of SimulatorController.
-Wed Apr 29 12:06:33 EDT 2020 INFO data.teams.TeamReaderFactory:3 - creating TeamReader for csv type file
-Wed Apr 29 12:06:33 EDT 2020 INFO data.brackets.BracketReaderFactory:4 - creating BracketReader for json type file
-Wed Apr 29 12:06:33 EDT 2020 INFO data.teams.TeamReaderCSV:5 - contents in the team file successfully read and converted to team objects
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:6 - printing the list of strategies to the terminal
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:7 - getting user choice for strategy
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:8 - user selected 3
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:9 - selection set
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:10 - processing user's selection.
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:11 - getting user's choice for biased team.
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:12 - user picked 1
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:13 - check if 1 is valid.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:14 - 1 is not valid.
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:15 - Invalid choice. Please try again. Remember to check for capitalization.
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:16 - user picked Kansas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:17 - check if Kansas is valid.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:18 - Kansas is valid.
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:19 - biased team name set.
-Wed Apr 29 12:06:33 EDT 2020 INFO presentation.CommandLineUI:20 - simulator created using the PickAFavorite strategy
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:21 - start running the simulator.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:22 - add a list of matches to the bracket
-Wed Apr 29 12:06:33 EDT 2020 INFO data.brackets.BracketReaderJSON:23 - Content successfully read from the JSON file.
-Wed Apr 29 12:06:33 EDT 2020 INFO data.brackets.BracketReaderJSON:24 - content converts to list of matches.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:25 - finished adding
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:26 - simulating match 1
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:27 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:28 - winner is Robert Morris
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:29 - simulating match 2
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:30 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:31 - winner is Richmond
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:32 - simulating match 3
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:33 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:34 - winner is UCLA
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:35 - simulating match 4
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:36 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:37 - winner is NC Central
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:38 - simulating match 5
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:39 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:40 - winner is Kansas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:41 - simulating match 6
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:42 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:43 - winner is Houston
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:44 - simulating match 7
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:45 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:46 - winner is Liberty
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:47 - simulating match 8
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:48 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:49 - winner is North Texas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:50 - simulating match 9
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:51 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:52 - winner is Iowa
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:53 - simulating match 10
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:54 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:55 - winner is Belmont
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:56 - simulating match 11
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:57 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:58 - winner is Providence
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:59 - simulating match 12
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:60 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:61 - winner is Kentucky
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:62 - simulating match 13
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:63 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:64 - winner is Dayton
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:65 - simulating match 14
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:66 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:67 - winner is Florida
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:68 - simulating match 15
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:69 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:70 - winner is Butler
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:71 - simulating match 16
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:72 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:73 - winner is Maryland
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:74 - simulating match 17
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:75 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:76 - winner is UCLA
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:77 - simulating match 18
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:78 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:79 - winner is Hofstra
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:80 - simulating match 19
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:81 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:82 - winner is Utah State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:83 - simulating match 20
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:84 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:85 - winner is Florida State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:86 - simulating match 21
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:87 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:88 - winner is Gonzaga
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:89 - simulating match 22
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:90 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:91 - winner is Lousiana State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:92 - simulating match 23
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:93 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:94 - winner is Yale
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:95 - simulating match 24
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:96 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:97 - winner is New Mexico State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:98 - simulating match 25
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:99 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:100 - winner is Brigham Young
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:101 - simulating match 26
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:102 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:103 - winner is Eastern Washington
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:104 - simulating match 27
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:105 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:106 - winner is Arizona
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:107 - simulating match 28
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:108 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:109 - winner is UC Irvine
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:110 - simulating match 29
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:111 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:112 - winner is Winthrop
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:113 - simulating match 30
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:114 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:115 - winner is Saint Mary's
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:116 - simulating match 31
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:117 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:118 - winner is Stephen F Austin
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:119 - simulating match 32
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:120 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:121 - winner is Vermont
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:122 - simulating match 33
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:123 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:124 - winner is Virginia
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:125 - simulating match 34
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:126 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:127 - winner is Michigan State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:128 - simulating match 35
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:129 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:130 - winner is Illinois
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:131 - simulating match 36
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:132 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:133 - winner is Creighton
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:134 - simulating match 37
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:135 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:136 - winner is Kansas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:137 - simulating match 38
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:138 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:139 - winner is North Texas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:140 - simulating match 39
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:141 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:142 - winner is Iowa
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:143 - simulating match 40
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:144 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:145 - winner is Kentucky
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:146 - simulating match 41
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:147 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:148 - winner is Dayton
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:149 - simulating match 42
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:150 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:151 - winner is Maryland
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:152 - simulating match 43
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:153 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:154 - winner is UCLA
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:155 - simulating match 44
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:156 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:157 - winner is Florida State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:158 - simulating match 45
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:159 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:160 - winner is Lousiana State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:161 - simulating match 46
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:162 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:163 - winner is New Mexico State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:164 - simulating match 47
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:165 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:166 - winner is Eastern Washington
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:167 - simulating match 48
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:168 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:169 - winner is UC Irvine
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:170 - simulating match 49
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:171 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:172 - winner is Saint Mary's
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:173 - simulating match 50
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:174 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:175 - winner is Stephen F Austin
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:176 - simulating match 51
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:177 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:178 - winner is Virginia
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:179 - simulating match 52
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:180 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:181 - winner is Illinois
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:182 - simulating match 53
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:183 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:184 - winner is Kansas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:185 - simulating match 54
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:186 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:187 - winner is Iowa
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:188 - simulating match 55
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:189 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:190 - winner is Dayton
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:191 - simulating match 56
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:192 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:193 - winner is Florida State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:194 - simulating match 57
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:195 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:196 - winner is Lousiana State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:197 - simulating match 58
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:198 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:199 - winner is UC Irvine
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:200 - simulating match 59
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:201 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:202 - winner is Stephen F Austin
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:203 - simulating match 60
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:204 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:205 - winner is Virginia
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:206 - simulating match 61
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:207 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:208 - winner is Kansas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:209 - simulating match 62
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:210 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:211 - winner is Florida State
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:212 - simulating match 63
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:213 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:214 - winner is UC Irvine
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:215 - simulating match 64
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:216 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:217 - winner is Virginia
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:218 - simulating match 65
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:219 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:220 - winner is Kansas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:221 - simulating match 66
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:222 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:223 - winner is Virginia
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:224 - simulating match 67
-Wed Apr 29 12:06:33 EDT 2020 INFO data.simulators.ChooseFavorite:225 - getWinner() called.
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:226 - winner is Kansas
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:227 - complete running the simulator. Winner should be available
-Wed Apr 29 12:06:33 EDT 2020 INFO controller.SimulatorController:228 - producing the outcome of the simulation into a String
+Wed Apr 29 17:53:34 EDT 2020 INFO presentation.CommandLineUI:1 - creating a new instance of CommandLineUI.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:2 - creating a new instance of SimulatorController.
+Wed Apr 29 17:53:34 EDT 2020 INFO data.teams.TeamReaderFactory:3 - creating TeamReader for csv type file
+Wed Apr 29 17:53:34 EDT 2020 INFO data.brackets.BracketReaderFactory:4 - creating BracketReader for json type file
+Wed Apr 29 17:53:34 EDT 2020 INFO data.teams.TeamReaderCSV:5 - contents in the team file successfully read and converted to team objects
+Wed Apr 29 17:53:34 EDT 2020 INFO presentation.CommandLineUI:6 - printing the list of strategies to the terminal
+Wed Apr 29 17:53:34 EDT 2020 INFO presentation.CommandLineUI:7 - getting user choice for strategy
+Wed Apr 29 17:53:34 EDT 2020 INFO presentation.CommandLineUI:8 - user selected 2
+Wed Apr 29 17:53:34 EDT 2020 INFO presentation.CommandLineUI:9 - selection set
+Wed Apr 29 17:53:34 EDT 2020 INFO presentation.CommandLineUI:10 - processing user's selection.
+Wed Apr 29 17:53:34 EDT 2020 INFO presentation.CommandLineUI:11 - simulator created using the BiasedRandomness strategy
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:12 - start running the simulator.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:13 - add a list of matches to the bracket
+Wed Apr 29 17:53:34 EDT 2020 INFO data.brackets.BracketReaderJSON:14 - Content successfully read from the JSON file.
+Wed Apr 29 17:53:34 EDT 2020 INFO data.brackets.BracketReaderJSON:15 - content converts to list of matches.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:16 - finished adding
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:17 - simulating match 1
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:18 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:19 - winner is Boston
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:20 - simulating match 2
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:21 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:22 - winner is Texas
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:23 - simulating match 3
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:24 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:25 - winner is UCLA
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:26 - simulating match 4
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:27 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:28 - winner is NC Central
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:29 - simulating match 5
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:30 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:31 - winner is Kansas
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:32 - simulating match 6
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:33 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:34 - winner is Houston
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:35 - simulating match 7
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:36 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:37 - winner is Liberty
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:38 - simulating match 8
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:39 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:40 - winner is Wisconsin
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:41 - simulating match 9
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:42 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:43 - winner is Iowa
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:44 - simulating match 10
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:45 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:46 - winner is Duke
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:47 - simulating match 11
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:48 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:49 - winner is Arizona State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:50 - simulating match 12
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:51 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:52 - winner is North Dakota State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:53 - simulating match 13
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:54 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:55 - winner is Dayton
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:56 - simulating match 14
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:57 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:58 - winner is Florida
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:59 - simulating match 15
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:60 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:61 - winner is Butler
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:62 - simulating match 16
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:63 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:64 - winner is Maryland
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:65 - simulating match 17
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:66 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:67 - winner is UCLA
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:68 - simulating match 18
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:69 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:70 - winner is Hofstra
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:71 - simulating match 19
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:72 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:73 - winner is Utah State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:74 - simulating match 20
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:75 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:76 - winner is Northern Kentucky
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:77 - simulating match 21
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:78 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:79 - winner is Gonzaga
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:80 - simulating match 22
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:81 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:82 - winner is Oklahoma
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:83 - simulating match 23
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:84 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:85 - winner is Michigan
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:86 - simulating match 24
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:87 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:88 - winner is Oregon
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:89 - simulating match 25
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:90 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:91 - winner is Indiana
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:92 - simulating match 26
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:93 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:94 - winner is Seton Hall
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:95 - simulating match 27
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:96 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:97 - winner is Arizona
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:98 - simulating match 28
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:99 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:100 - winner is UC Irvine
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:101 - simulating match 29
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:102 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:103 - winner is Winthrop
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:104 - simulating match 30
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:105 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:106 - winner is Rutgers
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:107 - simulating match 31
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:108 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:109 - winner is Ohio State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:110 - simulating match 32
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:111 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:112 - winner is Louisville
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:113 - simulating match 33
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:114 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:115 - winner is Cincinnati
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:116 - simulating match 34
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:117 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:118 - winner is Michigan State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:119 - simulating match 35
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:120 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:121 - winner is Souther California
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:122 - simulating match 36
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:123 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:124 - winner is Creighton
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:125 - simulating match 37
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:126 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:127 - winner is Houston
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:128 - simulating match 38
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:129 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:130 - winner is Liberty
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:131 - simulating match 39
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:132 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:133 - winner is Iowa
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:134 - simulating match 40
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:135 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:136 - winner is Arizona State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:137 - simulating match 41
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:138 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:139 - winner is Florida
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:140 - simulating match 42
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:141 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:142 - winner is Maryland
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:143 - simulating match 43
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:144 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:145 - winner is UCLA
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:146 - simulating match 44
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:147 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:148 - winner is Utah State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:149 - simulating match 45
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:150 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:151 - winner is Oklahoma
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:152 - simulating match 46
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:153 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:154 - winner is Michigan
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:155 - simulating match 47
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:156 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:157 - winner is Seton Hall
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:158 - simulating match 48
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:159 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:160 - winner is UC Irvine
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:161 - simulating match 49
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:162 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:163 - winner is Winthrop
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:164 - simulating match 50
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:165 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:166 - winner is Ohio State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:167 - simulating match 51
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:168 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:169 - winner is Cincinnati
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:170 - simulating match 52
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:171 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:172 - winner is Souther California
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:173 - simulating match 53
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:174 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:175 - winner is Liberty
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:176 - simulating match 54
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:177 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:178 - winner is Arizona State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:179 - simulating match 55
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:180 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:181 - winner is Maryland
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:182 - simulating match 56
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:183 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:184 - winner is Utah State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:185 - simulating match 57
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:186 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:187 - winner is Oklahoma
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:188 - simulating match 58
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:189 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:190 - winner is Seton Hall
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:191 - simulating match 59
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:192 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:193 - winner is Winthrop
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:194 - simulating match 60
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:195 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:196 - winner is Souther California
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:197 - simulating match 61
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:198 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:199 - winner is Liberty
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:200 - simulating match 62
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:201 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:202 - winner is Utah State
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:203 - simulating match 63
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:204 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:205 - winner is Oklahoma
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:206 - simulating match 64
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:207 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:208 - winner is Souther California
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:209 - simulating match 65
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:210 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:211 - winner is Liberty
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:212 - simulating match 66
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:213 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:214 - winner is Souther California
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:215 - simulating match 67
+Wed Apr 29 17:53:34 EDT 2020 INFO data.simulators.BiasedRandom:216 - getWinner() called.
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:217 - winner is Souther California
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:218 - complete running the simulator. Winner should be available
+Wed Apr 29 17:53:34 EDT 2020 INFO controller.SimulatorController:219 - producing the outcome of the simulation into a String

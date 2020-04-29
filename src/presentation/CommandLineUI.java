@@ -1,9 +1,12 @@
 package presentation;
 
 import controller.SimulatorController;
-import javafx.scene.effect.Bloom;
+import data.simulators.BiasedRandom;
+import data.simulators.ChooseFavorite;
+import data.simulators.FavoriteAlwaysWins;
+import data.simulators.Simulator;
 import logging.Logger;
-import records.Bracket;
+import records.Team;
 
 import java.util.*;
 
@@ -12,17 +15,20 @@ public class CommandLineUI {
     private Scanner in;
     private SimulatorController sc;
     private Logger logger;
+    private List<Team> teamList;
+    private Simulator simulator;
 
     public CommandLineUI(String team_filename, String bracket_filename) {
         logger = Logger.getInstance();
         logger.info(this.getClass().getName(), "creating a new instance of CommandLineUI.");
         in = new Scanner(System.in);
         sc = new SimulatorController(team_filename, bracket_filename);
+        teamList = sc.getTeamList();
     }
 
     public void start() {
         menu();
-        sc.runSimulator();
+        sc.runSimulator(simulator);
         System.out.println(sc.getOutComeString());
     }
 
@@ -71,14 +77,17 @@ public class CommandLineUI {
         String teamname = "";
         switch (selection) {
             case 1:
-                sc.setStrategy("FavoriteAlwaysWins", teamname);
+                simulator = new FavoriteAlwaysWins(teamList);
+                logger.info(this.getClass().getName(), "simulator created using the FavoriteAlwaysWins strategy");
                 break;
             case 2:
-                sc.setStrategy("BiasedRandomness", teamname);
+                simulator = new BiasedRandom(teamList);
+                logger.info(this.getClass().getName(), "simulator created using the BiasedRandomness strategy");
                 break;
             case 3:
                 teamname = getBiasedTeamName();
-                sc.setStrategy("PickAFavorite", teamname);
+                simulator = new ChooseFavorite(teamList, teamname);
+                logger.info(this.getClass().getName(), "simulator created using the PickAFavorite strategy");
                 break;
         }
     }

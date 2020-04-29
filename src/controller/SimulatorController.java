@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 public class SimulatorController {
     private Logger logger;
     private Bracket bracket;
-    private Simulator simulator;
     private TeamReader teamReader;
     private BracketReader bracketReader;
     private Map<Integer, Team> winnerMap;
@@ -39,26 +38,7 @@ public class SimulatorController {
         return false;
     }
 
-    public void setStrategy(String strategy, String biased_team) {
-        if(strategy.equals("FavoriteAlwaysWins")) {
-            simulator = new FavoriteAlwaysWins(teamReader.getTeamList());
-            logger.info(this.getClass().getName(), "simulator created using the FavoriteAlwaysWins strategy");
-        }
-        else if(strategy.equals("BiasedRandomness")) {
-            simulator = new BiasedRandom(teamReader.getTeamList());
-            logger.info(this.getClass().getName(), "simulator created using the BiasedRandomness strategy");
-        }
-        else if(strategy.equals("PickAFavorite")) {
-            simulator = new ChooseFavorite(teamReader.getTeamList(), biased_team);
-            logger.info(this.getClass().getName(), "simulator created using the PickAFavorite strategy");
-        }
-        else {
-            simulator = null;
-            logger.info(this.getClass().getName(), "simulator cannot be created");
-        }
-    }
-
-    public void runSimulator() {
+    public void runSimulator(Simulator simulator) {
         logger.info(this.getClass().getName(), "start running the simulator.");
         HashMap<Integer, Match> matchMap = listToBracket();
         List<Match> matches = bracketReader.getMatchList().stream()
@@ -103,5 +83,9 @@ public class SimulatorController {
         }
         logger.info(this.getClass().getName(), "finished adding");
         return bracket.getBracket();
+    }
+
+    public List<Team> getTeamList() {
+        return teamReader.getTeamList();
     }
 }

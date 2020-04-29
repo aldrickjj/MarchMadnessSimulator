@@ -12,10 +12,10 @@ public class ChooseFavorite implements Simulator{
     private Team biased_team;
     private Map<String, Team> teamMap;
 
-    public ChooseFavorite(List<Team> teamList, Team biased_team) {
-        this.biased_team = biased_team;
+    public ChooseFavorite(List<Team> teamList, String biased_team_name) {
         teamMap = new HashMap<>();
         listToMap(teamList);
+        this.biased_team = teamMap.get(biased_team_name);
     }
 
     @Override

@@ -3,11 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="a59ed3b9-478f-466a-bf29-be1621bbe492" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MarchMadnessSimulator/controller/SimulatorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarchMadnessSimulator/controller/SimulatorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MarchMadnessSimulator/presentation/CommandLineUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarchMadnessSimulator/presentation/CommandLineUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/SimulatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SimulatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/brackets/BracketReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/brackets/BracketReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/brackets/BracketReaderCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/brackets/BracketReaderCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/brackets/BracketReaderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/brackets/BracketReaderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/brackets/BracketReaderJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/brackets/BracketReaderJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/simulators/BiasedRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/simulators/BiasedRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/simulators/ChooseFavorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/simulators/ChooseFavorite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/simulators/FavoriteAlwaysWins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/simulators/FavoriteAlwaysWins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/simulators/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/simulators/Simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/teams/TeamReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/teams/TeamReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/teams/TeamReaderCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/teams/TeamReaderCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/teams/TeamReaderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/teams/TeamReaderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/teams/TeamReaderJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/teams/TeamReaderJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logging/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/CommandLineUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/CommandLineUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/records/Bracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/records/Bracket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/records/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/records/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/records/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/records/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +124,11 @@
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1578" height="282" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1588139599927" />
-    <state x="506" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588138974160">
+    <state x="506" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588196769445">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588097055887" />
-    <state x="506" y="344" key="com.intellij.ide.util.TipDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1588138974160" />
+    <state x="506" y="344" key="com.intellij.ide.util.TipDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1588196769445" />
     <state x="-6" y="0" width="781" height="830" key="dock-window-1" timestamp="1588098534920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

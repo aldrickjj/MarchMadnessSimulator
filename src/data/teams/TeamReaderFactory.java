@@ -1,7 +1,9 @@
+/**
+ * @authors Wei Wang (ww2ta), Aldrick Johan (aj2nud)
+ */
+
 package data.teams;
 
-import data.brackets.BracketReaderCSV;
-import data.brackets.BracketReaderJSON;
 import logging.Logger;
 
 /**

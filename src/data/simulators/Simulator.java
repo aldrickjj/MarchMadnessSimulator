@@ -1,3 +1,7 @@
+/**
+ * @authors Wei Wang (ww2ta), Aldrick Johan (aj2nud)
+ */
+
 package data.simulators;
 
 import records.Match;

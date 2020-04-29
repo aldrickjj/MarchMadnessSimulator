@@ -1,4 +1,9 @@
 package data.simulators;
 
-public class FavoriteAlwaysWins {
+import records.Team;
+
+public class FavoriteAlwaysWins implements Simulator {
+    public Team getWinner() {
+
+    }
 }

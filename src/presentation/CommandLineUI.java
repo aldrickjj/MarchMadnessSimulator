@@ -10,6 +10,9 @@ import records.Team;
 
 import java.util.*;
 
+/**
+ * This Class controls the UI which the user sees
+ */
 public class CommandLineUI {
     private static final int NUM_STRATEGIES = 3;
     private Scanner in;
@@ -18,6 +21,11 @@ public class CommandLineUI {
     private List<Team> teamList;
     private Simulator simulator;
 
+    /**
+     * Constructor for the CommandLineUI
+     * @param team_filename the name of the file containing the team data
+     * @param bracket_filename the name of the file containing the bracket data
+     */
     public CommandLineUI(String team_filename, String bracket_filename) {
         logger = Logger.getInstance();
         logger.info(this.getClass().getName(), "creating a new instance of CommandLineUI.");
@@ -26,18 +34,27 @@ public class CommandLineUI {
         teamList = sc.getTeamList();
     }
 
+    /**
+     * Starts the simulation
+     */
     public void start() {
         menu();
         sc.runSimulator(simulator);
         System.out.println(sc.getOutComeString());
     }
 
+    /**
+     * Provides the menu of options to the user
+     */
     private void menu() {
         printStrategies();
         int selection = getUserSelection();
         processSelection(selection);
     }
 
+    /**
+     * Prints the different options for simulation that the user can chose
+     */
     private void printStrategies() {
         logger.info(this.getClass().getName(), "printing the list of strategies to the terminal");
         System.out.println("1. Favorite Always Wins");
@@ -45,6 +62,10 @@ public class CommandLineUI {
         System.out.println("3. Pick a Favorite");
     }
 
+    /**
+     * Gets the users choice in how to simulate the game
+     * @return the number selection the user made
+     */
     private int getUserSelection() {
         logger.info(this.getClass().getName(), "getting user choice for strategy");
         boolean hasValidSelection = false;
@@ -72,6 +93,10 @@ public class CommandLineUI {
         return selection;
     }
 
+    /**
+     * Select the correct simulation method based on the user's choice
+     * @param selection the number the user selected
+     */
     private void processSelection(int selection) {
         logger.info(this.getClass().getName(), "processing user's selection.");
         String teamname = "";
@@ -92,6 +117,10 @@ public class CommandLineUI {
         }
     }
 
+    /**
+     * Gets the user's choice when they choose a team
+     * @return the team they selected
+     */
     private String getBiasedTeamName() {
         logger.info(this.getClass().getName(), "getting user's choice for biased team.");
         boolean validTeamName;

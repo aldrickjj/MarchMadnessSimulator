@@ -13,7 +13,7 @@ public class Logger {
     private int line_number;
 
     private Logger() {
-        line_number = 0;
+        line_number = 1;
         date = new Date();
         file_name = "log.txt";
         try {
@@ -35,6 +35,7 @@ public class Logger {
         StringBuilder sb = new StringBuilder();
         sb.append(date.toString()).append(" ERROR ").append(className)
                 .append(":").append(line_number).append(" - ").append(message);
+        line_number += 1;
         try {
             writer.write(sb.toString());
             writer.newLine();
@@ -48,6 +49,7 @@ public class Logger {
         StringBuilder sb = new StringBuilder();
         sb.append(date.toString()).append(" INFO ").append(className)
                 .append(":").append(line_number).append(" - ").append(message);
+        line_number += 1;
         try {
             writer.write(sb.toString());
             writer.newLine();
@@ -61,6 +63,7 @@ public class Logger {
         StringBuilder sb = new StringBuilder();
         sb.append(date.toString()).append(" TRACE ").append(className)
                 .append(":").append(line_number).append(" - ").append(message);
+        line_number += 1;
         try {
             writer.write(sb.toString());
             writer.newLine();

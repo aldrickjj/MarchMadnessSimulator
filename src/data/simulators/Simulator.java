@@ -1,7 +1,8 @@
 package data.simulators;
 
+import records.Match;
 import records.Team;
 
 public interface Simulator {
-    public Team getWinner(Team team1, Team team2);
+    public Team getWinner(Match match);
 }

@@ -1,14 +1,26 @@
 package data.simulators;
 
+import records.Match;
 import records.Team;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class BiasedRandom implements Simulator{
 
-    public BiasedRandom(){}
+    private Map<String, Team> teamMap;
+
+    public BiasedRandom(List<Team> teamList) {
+        teamMap = new HashMap<>();
+        listToMap(teamList);
+    }
     
     @Override
-    public Team getWinner(Team team1, Team team2) {
+    public Team getWinner(Match match) {
+        Team team1 = teamMap.get(match.getTeam1());
+        Team team2 = teamMap.get(match.getTeam2());
         Team favorite = team1;
         Team underdog = team1;
         if(team2.getElo() > team1.getElo())
@@ -27,5 +39,12 @@ public class BiasedRandom implements Simulator{
             return favorite;
         else
             return underdog;
+    }
+
+    private void listToMap(List<Team> teamList) {
+        for(Team team : teamList) {
+            String name = team.getName();
+            teamMap.put(name, team);
+        }
     }
 }

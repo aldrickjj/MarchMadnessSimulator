@@ -2,11 +2,12 @@ MarchMadnessSimulator by Aldrick Johan(aj2nud) and Wei Wang(ww2ta)
 
 **Packages and Classes in this File:**
 
-controller - has the controller layer of the program
+controller - contains the controller layer of the program
 
-    SimulatorController - controller for the program
+    SimulatorController - controller for the program, goes in between 
+    the data layer and the view layer 
 
-data - has the data layer of the program
+data - contains the data layer of the program
 
     brackets - deals with reading in bracket data
         BracketReader - interface defining what a BracketReader must do
@@ -14,7 +15,7 @@ data - has the data layer of the program
         BracketReaderFactory - Creates BracketReader based on input file
         BracketReaderJSON - a BracketReader that reads from JSON Files
     
-    simulators - deals with the strategies that are used to choose the winners
+    simulators - contains strategies that are used to choose the winners
         BiasedRandom - chooses team using a formula that is partially random
         ChooseFavorite - allows the user to choose a team that always win
         FavoriteAlwaysWins - the winner always wins
@@ -26,13 +27,13 @@ data - has the data layer of the program
         TeamReaderFactory - Creates TeamReader based on input file
         TeamReaderJSON - a TeamReader that reads from JSON Files
 
-logging - has a logger 
+logging - contains the logging system for the program 
 
-    Logger - implements a singleton logger
+    Logger - implements a singleton logger that writes updates to a txt file
 
-presentation - has the view layer of the project
+presentation - contains the view layer of the project
 
-    CommandLineUI - UI for the program
+    CommandLineUI - provides the user interface of the program
 
 records - Plain Old Java Objects
 
@@ -46,4 +47,5 @@ start - starts the program
 **How to run:** 
 
     Open project in Intellij and run the program with two command line arguments for the file names.
-    No additional libraries are required.
+    Provide the team file before providing the bracket file. No additional libraries are required.
+    Example: java start teams.csv bracket.csv

@@ -1,4 +1,5 @@
 MarchMadnessSimulator by Aldrick Johan(aj2nud) and Wei Wang(ww2ta)
+Simulates March Madness using various metrics, explained further below.
 
 **Packages and Classes in this File:**
 
